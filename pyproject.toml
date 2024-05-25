@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "myapp"
+name = "backend"
 version = "0.1.0"
 description = ""
 authors = ["ansgar.poelking <merkmich@gmail.com>"]

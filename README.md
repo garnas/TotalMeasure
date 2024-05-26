@@ -1,1 +1,4 @@
-# TEST
+## Start Server
+``
+python deploy.py
+``

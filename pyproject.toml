@@ -8,6 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 flask = "==3.0.3"
+paramiko = "=3.4.0"
+scp = "0.15.0"
+python-dotenv = "1.0.1"
 
 [build-system]
 requires = ["poetry-core"]

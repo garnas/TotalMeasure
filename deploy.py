@@ -26,7 +26,7 @@ result = subprocess.run(
 if not os.path.exists(dist_source):
     raise Exception("Failed to build dist directory")
 
-print("Create an SSH client instance ...")
+print("Create SSH client instance ...")
 ssh = paramiko.SSHClient()
 ssh.load_system_host_keys()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())

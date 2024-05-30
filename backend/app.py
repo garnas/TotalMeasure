@@ -1,5 +1,4 @@
 import os
-import subprocess
 
 from flask import Flask, send_from_directory, Response
 
@@ -19,12 +18,6 @@ def assets(path):
     directory_from_content_root = os.path.join("frontend", "dist", "assets")
     directory = os.path.abspath(directory_from_content_root)
     return send_from_directory(directory, path)
-
-
-@app.route("/gunicorn.log")
-def index():
-    return app.send_static_file("index.html")
-
 
 @app.route("/log")
 def log():
